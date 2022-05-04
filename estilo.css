@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;1,200&display=swap');
+:root{
+    --cyber-grape: #613f75;
+    --wild-blue-yonder: #8c8eb8;
+    --amethyst-smoke: #9f9bbc;
+    --french-rose: #ea4587;
+    --persian-pink: #f68eab;
+    --mercury: #e2e2e2;
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: var(--mercury);
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+p{
+    line-height: 1.3;
+    color: #613f75;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px; 
+}
+hr{
+    border: none;
+    border-radius: 5px;
+    width: 10rem;
+    height: 0.2rem;
+    background-color: var(--wild-blue-yonder);
+    margin-top: 1.5rem;
+}
+/* ############# HEADER #####################*/
+.header-container{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header-bg{
+    background-color: var(--cyber-grape);  
+}
+.section__titulo{
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+    color: var( --french-rose);
+    margin-bottom: 1rem;
+}
+
+.logo{
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.logo-imagem{
+    height: 2rem;
+    padding-right: 0.3rem;
+}
+.imagem-logo{
+    width: 100%;
+    height: 100%;
+  
+}
+.nome_pagina a{
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: bold;
+    color: var(--wild-blue-yonder);
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.menu li{
+    padding: 0.5rem;
+}
+.menu a{
+    color: var(--wild-blue-yonder);
+    font-size: 0.9rem;
+}
+
+.frase-de-efeito{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    color: var(--cyber-grape);
+}
+
+/* ################### SOBRE NÓS ######################*/
+.section-sobre{
+    margin-top: 2rem;
+}
+.container_sobre{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.container_sobre_conteudos{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.conteudo-sobre{
+    flex-grow: 6;
+    flex-basis: 300px;
+    flex-shrink: 1;
+    padding: 1em;
+    
+}
+.conteudo-imagem{
+    flex-grow: 1;
+    flex-basis: 250px;
+    flex-shrink: 1;
+   
+}
+@media screen and (max-width: 550px){
+    .container_sobre_conteudos{
+        flex-direction: column-reverse;
+       
+    }
+    .conteudo-imagem{
+        height: 18rem;
+    }
+}
+/* ############################# CURSOS #############################*/
+.section-cursos{
+    
+    max-width: 960px;
+    margin: 2rem auto 0;
+    
+}
+.container_cursos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cursos{
+    width: 240px;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+@media screen and (max-width: 980px){
+    .container_cursos{
+        
+        justify-content: space-around;
+    }
+    .cursos{
+        width: 350px;
+    }
+}
+.link-curso{
+    display: block;
+    width: 100%;
+    height: 230px;  
+}
+.titulo-curso, .vantagem_titulo{
+    margin-top: 0.3rem;
+    text-shadow: 1px 1px 3px var(--amethyst-smoke);
+}
+
+/* ############################ PLANOS ###################################*/
+
+.section-planos{
+    margin-top: 2rem;
+}
+.section-planos-bg{
+    background-color: var(--wild-blue-yonder);
+}
+.container-planos{
+    max-width: 960px;
+    margin: 0 auto 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.planos{
+    max-width: 260px;
+    border: 1px solid var(--french-rose);
+    padding: 1rem;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 3px var(--cyber-grape);
+    
+}
+.planos-titulo{
+    font-size: 2rem;
+    position: relative;
+}
+.plano-valor{
+    font-size: 1rem;
+    position: relative;
+    bottom: 1rem;
+}
+.planos-titulo::after{
+    content: ' '; 
+    display: block;
+    width: 1rem;
+    height: 0.2rem;
+    background-color: var(--mercury);
+    position: relative;
+    left: 1.5rem;
+}
+.lista-planos{
+    list-style: none;
+    
+    
+}
+.lista-planos li{
+    margin-bottom: 0.5rem;
+}
+.lista-planos li::before{
+    content: ' '; 
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-right: 0.3rem;
+    margin-left: -0.5rem;
+    border-radius: 50%;
+    background-color: var(--french-rose);
+}
+.planos:last-child{
+    background-color: var(--persian-pink);
+}
+.planos:last-child .lista-planos li::before{
+    background-color: var(--mercury);
+}
+.link-plano{
+    border-radius: 5px;
+    background-color: var(--mercury);
+    padding: 0.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+@media screen and (max-width: 800px){
+    .container-planos{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .planos{
+        margin-bottom: 2rem;
+        
+    }
+}
+
+/* ########################## VANTAGENS ##############################  */
+.section_vantagens{ 
+    max-width: 960px;
+    margin: 2rem auto;
+}
+.vantagens-c{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.vantagem{
+    width: 250px;
+    margin: 1rem;
+    border-bottom: 2px solid var(--cyber-grape);
+   
+}
+.vantagem_titulo{
+    display: flex;
+    align-items: center;
+}
+.vantagem_titulo::before{
+    content: ' ';
+    display: inline-block;
+    width: 0.3rem;
+    height: 1rem;
+    margin-right: 0.4rem;
+    
+}
+.vantagem:nth-of-type(3n+1)  .vantagem_titulo::before{
+    background-color: var(--french-rose);
+}
+.vantagem:nth-of-type(3n+2)  .vantagem_titulo::before{
+    background-color: var(--amethyst-smoke);
+}
+
+.vantagem:nth-child(3n+3) .vantagem_titulo::before{
+    background-color: var(--persian-pink);
+}
+@media screen and (max-width:900px){
+    .vantagens-c{
+        justify-content: center;
+    }
+    .vantagem{
+        width: 300px;     
+    }
+}
+@media screen and (max-width: 700px){
+    .vantagens-c{
+        justify-content: flex-start;
+    }
+    .vantagem{
+        width: 100%;
+        
+    }
+}
+
+/* #################### ASSINAR ########################## */
+.section-newsweet{
+    margin: 2rem 0 0;
+    background-color: var(--persian-pink);
+}
+.newsweet-c{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.newsweet{
+    text-align: center;
+    flex-grow: 2;
+    padding: 0.5rem;
+}
+.newsweet_title{
+    font-size: 2rem;
+    letter-spacing: 4px;
+}
+.s{
+    text-shadow: -2px 1px 2px var(--wild-blue-yonder);
+}
+.newsweet_subtitle{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.newsweet-form{
+    padding: 0.5rem;
+    background-color: var(--wild-blue-yonder);
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.label_form{
+    margin-bottom: 0.5rem;
+}
+.input_width{
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    border-color: var(--cyber-grape);
+    border-style: solid;
+    
+}
+.input_width:focus{
+    outline: none; 
+}
+.newsweet_assinar{
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: var(--wild-blue-yonder);
+    border: 2px solid var(--cyber-grape);
+    cursor: pointer;
+}
+/* ###################### FOOTER ####################### */
+.footer{
+    background-color: var( --cyber-grape);
+}
+.footer-c{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.footer_description{
+    flex-basis: 500px;
+    flex-shrink: 2;
+}
+.footer_description p{
+   color:#8c8eb8;
+}
