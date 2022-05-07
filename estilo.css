@@ -134,7 +134,7 @@ hr{
     flex-shrink: 1;
    
 }
-@media screen and (max-width: 550px){
+@media screen and (max-width: 650px){
     .container_sobre_conteudos{
         flex-direction: column-reverse;
        
