@@ -361,6 +361,7 @@ hr{
     background-color: var(--wild-blue-yonder);
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
     flex-grow: 1;
     
 }
@@ -368,11 +369,13 @@ hr{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    padding: 5px;
 }
 .label_form{
     margin-bottom: 0.5rem;
 }
 .input_width{
+    width: 100%;
     padding: 0.5rem;
     font-size: 1rem;
     margin-right: 0.5rem;
@@ -400,13 +403,15 @@ hr{
     max-width: 960px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 1rem;
+    flex-wrap: wrap;
 }
 .footer_description{
-    flex-basis: 500px;
-    flex-shrink: 2;
+   
+    flex: 1 2 500px;
 }
-.footer_description p{
+.description{
    color:#8c8eb8;
+   font-size: 0.8rem;
 }
