@@ -8,6 +8,8 @@
 * Apliquei Flexbox em algumas partes de modo diferente ou quando ele não usava
 * Tema e cores alteradas
 
-
+## Telas
+![header/sobre/cursos](https://raw.githubusercontent.com/Thhais/site-responsivo-doces-memorias/Main/telas/Screenshot_1.png)
+![planos/vantagens/assine/footer](https://raw.githubusercontent.com/Thhais/site-responsivo-doces-memorias/Main/telas/Screenshot_2.png)
 
 
